@@ -16,19 +16,19 @@ This template has been updated for:
 
 ## Requirements
 
-[Node.js](https://nodejs.org) is required to install dependencies and run scripts via `npm`.
+[Node.js](https://nodejs.org) is required to install dependencies and run scripts via `bun`.
 
 ## Available Commands
 
 | Command | Description |
 |---------|-------------|
-| `npm install` | Install project dependencies |
-| `npm run dev` | Launch a development web server |
-| `npm run build` | Create a production build in the `dist` folder |
+| `bun install` | Install project dependencies |
+| `bun run dev` | Launch a development web server |
+| `bun run build` | Create a production build in the `dist` folder |
 
 ## Writing Code
 
-After cloning the repo, run `npm install` from your project directory. Then, you can start the local development server by running `npm run dev`.
+After cloning the repo, run `bun install` from your project directory. Then, you can start the local development server by running `bun run dev`.
 
 The local development server runs on `http://localhost:8080` by default. Please see the Vite documentation if you wish to change this, or add SSL support.
 
@@ -71,11 +71,11 @@ preload ()
 }
 ```
 
-When you issue the `npm run build` command, all static assets are automatically copied to the `dist/assets` folder.
+When you issue the `bun run build` command, all static assets are automatically copied to the `dist/assets` folder.
 
 ## Deploying to Production
 
-After you run the `npm run build` command, your code will be built into a single bundle and saved to the `dist` folder, along with any other assets your project imported, or stored in the public assets folder.
+After you run the `bun run build` command, your code will be built into a single bundle and saved to the `dist` folder, along with any other assets your project imported, or stored in the public assets folder.
 
 In order to deploy your game, you will need to upload *all* of the contents of the `dist` folder to a public facing web server.
 
@@ -83,7 +83,7 @@ In order to deploy your game, you will need to upload *all* of the contents of t
 
 ### Vite
 
-If you want to customize your build, such as adding plugin (i.e. for loading CSS or fonts), you can modify the `vite/config.*.mjs` file for cross-project changes, or you can modify and/or create new configuration files and target them in specific npm tasks inside of `package.json`. Please see the [Vite documentation](https://vitejs.dev/) for more information.
+If you want to customize your build, such as adding plugin (i.e. for loading CSS or fonts), you can modify the `vite/config.*.mjs` file for cross-project changes, or you can modify and/or create new configuration files and target them in specific bun tasks inside of `package.json`. Please see the [Vite documentation](https://vitejs.dev/) for more information.
 
 ## Join the Phaser Community!
 
