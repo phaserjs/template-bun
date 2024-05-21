@@ -2,8 +2,6 @@
 
 This is a Phaser 3 project template that uses Vite and Bun for bundling. It supports hot-reloading for quick development workflow, includes TypeScript support and scripts to generate production-ready builds.
 
-**[This Template is also available as a JavaScript version.](https://github.com/phaserjs/template-vite)**
-
 ### Versions
 
 This template has been updated for:
@@ -16,7 +14,7 @@ This template has been updated for:
 
 ## Requirements
 
-[Node.js](https://nodejs.org) is required to install dependencies and run scripts via `bun`.
+[Bun](https://bun.sh) is required to install dependencies and run scripts via `bun`.
 
 ## Available Commands
 
