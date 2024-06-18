@@ -1,7 +1,7 @@
 {
     "name": "template-bun",
     "description": "A Phaser 3 template using bun.",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/phaserjs/template-bun.git"
@@ -23,6 +23,6 @@
         "vite": "^5.2.11"
     },
     "dependencies": {
-        "phaser": "^3.80.1"
+        "phaser": "3.80.1"
     }
 }
