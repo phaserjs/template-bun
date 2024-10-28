@@ -23,8 +23,8 @@ This template has been updated for:
 | `bun install` | Install project dependencies |
 | `bun run dev` | Launch a development web server |
 | `bun run build` | Create a production build in the `dist` folder |
-| `npm run dev-nolog` | Launch a development web server without sending anonymous data (see "About log.js" below) |
-| `npm run build-nolog` | Create a production build in the `dist` folder without sending anonymous data (see "About log.js" below) |
+| `bun run dev-nolog` | Launch a development web server without sending anonymous data (see "About log.js" below) |
+| `bun run build-nolog` | Create a production build in the `dist` folder without sending anonymous data (see "About log.js" below) |
 
 ## Writing Code
 
@@ -100,13 +100,13 @@ However, if you don't want to send any data, you can use these commands instead:
 Dev:
 
 ```bash
-npm run dev-nolog
+bun run dev-nolog
 ```
 
 Build:
 
 ```bash
-npm run build-nolog
+bun run build-nolog
 ```
 
 Or, to disable the log entirely, simply delete the file `log.js` and remove the call to it in the `scripts` section of `package.json`:
@@ -115,8 +115,8 @@ Before:
 
 ```json
 "scripts": {
-    "dev": "node log.js dev & dev-template-script",
-    "build": "node log.js build & build-template-script"
+    "dev": "bun log.js dev & bunx --bun vite --config vite/config.dev.mjs",
+    "build": "bun log.js build & bunx --bun vite build --config vite/config.prod.mjs"
 },
 ```
 
@@ -124,8 +124,8 @@ After:
 
 ```json
 "scripts": {
-    "dev": "dev-template-script",
-    "build": "build-template-script"
+    "dev": "bunx --bun vite --config vite/config.dev.mjs",
+    "build": "bunx --bun vite build --config vite/config.prod.mjs"
 },
 ```
 
