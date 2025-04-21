@@ -1,7 +1,7 @@
 {
     "name": "template-bun",
     "description": "A Phaser 3 template using bun.",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/phaserjs/template-bun.git"
@@ -20,9 +20,9 @@
         "build-nolog": "bunx --bun vite build --config vite/config.prod.mjs"
     },
     "devDependencies": {
-        "terser": "^5.31.0",
-        "typescript": "^5.4.5",
-        "vite": "^5.2.11"
+        "typescript": "~5.7.2",
+        "vite": "^6.3.1",
+        "terser": "^5.39.0"
     },
     "dependencies": {
         "phaser": "^3.88.2"
