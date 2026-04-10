@@ -1,30 +1,30 @@
 {
-    "name": "template-bun",
-    "description": "A Phaser 3 template using bun.",
-    "version": "1.1.0",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/phaserjs/template-bun.git"
-    },
-    "author": "Phaser Studio <support@phaser.io> (https://phaser.io/)",
-    "license": "MIT",
-    "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
-    "bugs": {
-        "url": "https://github.com/phaserjs/template-bun/issues"
-    },
-    "homepage": "https://github.com/phaserjs/template-bun#readme",
-    "scripts": {
-        "dev": "bun log.js dev && bunx --bun vite --config vite/config.dev.mjs",
-        "build": "bun log.js build && bunx --bun vite build --config vite/config.prod.mjs",
-        "dev-nolog": "bunx --bun vite --config vite/config.dev.mjs",
-        "build-nolog": "bunx --bun vite build --config vite/config.prod.mjs"
-    },
-    "devDependencies": {
-        "typescript": "~5.7.2",
-        "vite": "^6.3.1",
-        "terser": "^5.39.0"
-    },
-    "dependencies": {
-        "phaser": "^3.90.0"
-    }
+  "name": "template-bun",
+  "description": "A Phaser 3 template using bun.",
+  "version": "1.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phaserjs/template-bun.git"
+  },
+  "author": "Phaser Studio <support@phaser.io> (https://phaser.io/)",
+  "license": "MIT",
+  "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
+  "bugs": {
+    "url": "https://github.com/phaserjs/template-bun/issues"
+  },
+  "homepage": "https://github.com/phaserjs/template-bun#readme",
+  "scripts": {
+    "dev": "bun log.js dev && bunx --bun vite --config vite/config.dev.mjs",
+    "build": "bun log.js build && bunx --bun vite build --config vite/config.prod.mjs",
+    "dev-nolog": "bunx --bun vite --config vite/config.dev.mjs",
+    "build-nolog": "bunx --bun vite build --config vite/config.prod.mjs"
+  },
+  "devDependencies": {
+    "typescript": "~5.7.2",
+    "vite": "^6.3.1",
+    "terser": "^5.39.0"
+  },
+  "dependencies": {
+    "phaser": "4.0.0"
+  }
 }
